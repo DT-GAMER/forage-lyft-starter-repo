@@ -1,4 +1,4 @@
-import abc from ABC, abstractmethod
+from abc import ABC, abstractmethod
 
 class Battery(ABC):
     def __init__(self, last_service_date):

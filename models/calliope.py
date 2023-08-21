@@ -6,14 +6,14 @@ from tires.octoprime_tire import OctoprimeTire
 class Calliope(Car):
     def __init__(self, current_mileage, last_service_mileage, last_service_date, tire_sensor_data):
         calliope_engine = CapuletEngine(current_mileage, last_service_mileage)
-        calliope_engine = SpindlerBattery(last_service_date)
-        calliope_tire = OctoprimeTire(tire_sensor_date):
+        calliope_battery = SpindlerBattery(last_service_date)
+        calliope_tire = OctoprimeTire(tire_sensor_data)
 
-        super().__init__(calliope_engine, calliope_batteries, calliope_tire)
+        super().__init__(calliope_engine, calliope_battery, calliope_tire)
 
-        self.engine = Calliope_engine
-        self.engine = calliope_battery
-        self.engine = calliope_tire
-
+        self.engine = calliope_engine
+        self.battery = calliope_battery
+        self.tire = calliope_tire
+    
     def needs_service(self):
         return super().needs_service()
